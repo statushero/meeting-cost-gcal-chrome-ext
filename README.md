@@ -2,6 +2,12 @@
 
 Rudimentary Google Chrome extension for displaying a ballpark estimate of meeting costs in Google Calendar.
 
+## How to use
+
+- Clone the repo
+- Visit chrome://extensions/
+- Click through "Load unpacked", select the directory
+
 ## Development
 
 - See the https://developer.chrome.com/docs/extensions/mv3/getstarted/
@@ -9,5 +15,5 @@ Rudimentary Google Chrome extension for displaying a ballpark estimate of meetin
 
 ## TODO
 
-- [ ] Options panel
-- [ ] Figure out distribution mechanism, public repo, MIT
+- Get it working with any meeting, not just yours
+- Pack, distribute

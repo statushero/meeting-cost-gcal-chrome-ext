@@ -1,6 +1,4 @@
 let eventTitle = null;
-const avgHourlyRate = 100;
-const minutesOverhead = 30;
 
 const checkForEventModal = () => {
   const eventModal = document.querySelector(".Mz3isd");
@@ -10,8 +8,11 @@ const checkForEventModal = () => {
       const guestDisplay = document.querySelector("#xDetDlgAtt .UfeRlc");
       const eventTimes = document.querySelector(".AzuXid.O2VjS.CyPPBf > span:nth-child(2)");
       const guestCount = parseInt(guestDisplay.innerText);
-      const eventCost = (duration(eventTimes.innerText) + minutesOverhead * 2) * guestCount * (avgHourlyRate / 60.0);
-      eventTitle.innerText = `${eventTitle.innerText} ($${eventCost})`;
+      chrome.storage.sync.get(['avgHourlyRate', 'overheadMinutes'], function(result) {
+        const eventCost = (duration(eventTimes.innerText) + parseInt(result.overheadMinutes || "20") * 2) * guestCount * (parseInt(result.avgHourlyRate || "100") / 60.0);
+        eventTitle.innerText = `${eventTitle.innerText} ($${Math.trunc(eventCost)})`;
+      });
+
     }
   } else {
     eventTitle = null;
