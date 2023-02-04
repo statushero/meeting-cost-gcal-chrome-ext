@@ -1,6 +1,6 @@
 # Meetings are expensive!
 
-Rudimentary extension for displaying a ballpack estimate of meeting cost.
+Rudimentary Google Chrome extension for displaying a ballpark estimate of meeting costs in Google Calendar.
 
 ## Development
 
