@@ -9,7 +9,5 @@ Rudimentary Google Chrome extension for displaying a ballpark estimate of meetin
 
 ## TODO
 
-- [ ] Parse for duration
-- [ ] Calculate and display (Assume X hourly wage, X% of spin-up, spin-down)
 - [ ] Options panel
 - [ ] Figure out distribution mechanism, public repo, MIT
