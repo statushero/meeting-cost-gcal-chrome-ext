@@ -2,6 +2,9 @@
 
 Rudimentary Google Chrome extension for displaying a ballpark estimate of meeting costs in Google Calendar.
 
+![CleanShot 2023-02-05 at 10 42 35@2x](https://user-images.githubusercontent.com/12004/216829562-47cc4665-ec71-4173-97ec-5be2469656d2.png)
+<img src="https://user-images.githubusercontent.com/12004/216829562-47cc4665-ec71-4173-97ec-5be2469656d2.png" width="512">
+
 ## How to use
 
 - Clone the repo
